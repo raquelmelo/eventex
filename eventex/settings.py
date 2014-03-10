@@ -107,6 +107,9 @@ ROOT_URLCONF = 'eventex.urls'
 WSGI_APPLICATION = 'eventex.wsgi.application'
 
 TEMPLATE_DIRS = (
+	PROJECT_DIR.child('dir-templates-1'),
+	PROJECT_DIR.child('dir-templates-2'),
+
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.

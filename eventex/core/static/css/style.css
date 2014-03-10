@@ -1,7 +1,8 @@
 <style type="text/css">
 <!--
-h1 {color: rgb(0,0,255);}
-p{color: rgb(255,255,0);}
-font {color: #FFFFFF;}
+h1 {color: rgb(0,0,255); font-family: serif;}
+p{color: rgb(#FF0000);}
+font {color: #00FF00;}
+body{background-color: #cff;}
 -->
 </style>
