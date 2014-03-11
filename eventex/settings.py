@@ -142,7 +142,10 @@ LOGGING = {
     'filters': {
         'require_debug_false': {
             '()': 'django.utils.log.RequireDebugFalse'
-        }
+        },
+	'required_debug_true':{
+		'()': 'django.utils.log.RequireDebugTrue',
+	},
     },
     'handlers': {
         'mail_admins': {
@@ -152,6 +155,7 @@ LOGGING = {
         },
 	'console':{
 		'level': 'DEBUG',
+		'filters': ['required_debug_true'],
 		'class': 'logging.StreamHandler', 
 	},
     },
