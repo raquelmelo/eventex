@@ -1,13 +1,17 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html>
+ {% extends 'base.html' %}
 <head>
 	<title>EVENTEX</title>
 	<link type="text/css" href="{{ STATIC_URL }}css/style.css"
 		rel="stylesheet" media="screen"/>
 </head>
 <body>
+        {% block content %}
 	<img src="{{ STATIC_URL }}img/index.jpeg" />
 	<h1>BEM VINDO AO HTML COM LINKS</h1>
 	<p>O evento mais sensacional!</p>
+	<p><strong><a href="/inscricao/">Inscreva-se Já!</a></strong></p>
+	{% endblock content %} 
 </body>
 </html>
